@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected photography by Khaled Hasan Munna — visual storytelling, documentary and community-focused photography.">
+  <meta name="theme-color" content="#101713">
+  <title>Khaled Hasan Munna — Best Photos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#101713; --fg:#f4f3ed; --muted:#aab4ad; --accent:#d96f50; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--fg); font-family:"DM Sans",sans-serif; }
+    .topbar { height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 5vw; border-bottom:1px solid rgba(255,255,255,.12); position:sticky; top:0; z-index:10; background:rgba(16,23,19,.92); backdrop-filter:blur(14px); }
+    .brand { color:var(--fg); text-decoration:none; text-transform:uppercase; letter-spacing:.12em; font-size:12px; font-weight:800; white-space:nowrap; }
+    nav { display:flex; gap:clamp(14px,2.5vw,34px); flex-wrap:wrap; justify-content:flex-end; }
+    nav a { color:#e5e8e2; text-decoration:none; font-size:13px; font-weight:600; transition:color .2s; }
+    nav a:hover { color:var(--accent); }
+    .intro { padding:clamp(55px,9vw,120px) 5vw 44px; max-width:1500px; margin:auto; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.22em; font-size:11px; font-weight:800; margin:0 0 18px; }
+    h1 { font-family:Manrope,sans-serif; font-size:clamp(42px,8vw,104px); line-height:.98; letter-spacing:-.065em; max-width:1000px; margin:0; font-weight:800; }
+    .intro p { color:var(--muted); font-size:14px; margin:24px 0 0; letter-spacing:.02em; }
+    .gallery-wrap { padding:20px 2.5vw 90px; }
+    .gallery { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); grid-auto-rows:clamp(90px,8vw,130px); gap:12px; max-width:1800px; margin:auto; }
+    .tile { margin:0; position:relative; overflow:hidden; background:#202b25; border-radius:2px; grid-column:span 4; grid-row:span 3; isolation:isolate; }
+    .tile:nth-child(5n+1) { grid-column:span 6; grid-row:span 4; }
+    .tile:nth-child(5n+2) { grid-column:span 3; grid-row:span 3; }
+    .tile:nth-child(5n+3) { grid-column:span 3; grid-row:span 4; }
+    .tile:nth-child(5n+4) { grid-column:span 4; grid-row:span 3; }
+    .tile:nth-child(5n) { grid-column:span 5; grid-row:span 3; }
+    .tile img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .65s cubic-bezier(.2,.7,.2,1), filter .5s; filter:saturate(.92); }
+    .tile:hover img { transform:scale(1.09); filter:saturate(1.08); }
+    .tile:after { content:""; position:absolute; inset:45% 0 0; background:linear-gradient(transparent,rgba(0,0,0,.45)); opacity:0; transition:opacity .3s; pointer-events:none; }
+    .tile:hover:after { opacity:1; }
+    figcaption { position:absolute; left:18px; bottom:16px; z-index:1; font-size:10px; text-transform:uppercase; letter-spacing:.16em; font-weight:800; opacity:0; transform:translateY(8px); transition:all .3s; }
+    .tile:hover figcaption { opacity:1; transform:translateY(0); }
+    footer { border-top:1px solid rgba(255,255,255,.12); padding:26px 5vw; color:var(--muted); font-size:12px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:760px) {
+      .topbar { height:auto; min-height:70px; padding:16px 5vw; align-items:flex-start; flex-direction:column; gap:14px; }
+      nav { justify-content:flex-start; gap:16px; }
+      nav a { font-size:12px; }
+      .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:105px; gap:8px; }
+      .tile,.tile:nth-child(n) { grid-column:span 1; grid-row:span 2; }
+      .tile:nth-child(3n+1) { grid-column:span 2; grid-row:span 2; }
+      .gallery-wrap { padding:12px 3vw 55px; }
+    }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://sites.google.com/view/khaled-hasan-munna/home">Khaled Hasan Munna / Visual Portfolio</a>
+    <nav aria-label="Main navigation">
+      <a href="https://sites.google.com/view/khaled-hasan-munna/home">Home</a>
+      <a href="index.html" aria-current="page">Photos</a>
+      <a href="https://khmunnabd.github.io/Website_desing/">Branding &amp; Design</a>
+      <a href="https://khmunnabd.github.io/About-2/index.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Photography · Documentary · Visual Storytelling</p>
+      <h1>Khaled Hasan Munna<br><span style="color:#c9d9ce">Best Photos.</span></h1>
+      <p>A selected collection of human stories, community work and moments through my lens.</p>
+    </section>
+    <section class="gallery-wrap" aria-label="Photography collage">
+      <div class="gallery">
+      <figure class="tile"><img src="assets/5028.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/510971950_10079530752122534_6673618958129128924_n.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/Image-Spacer-5-2048x1155.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/Image-Spacer-4.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/DSC02339.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/WhatsApp Image 2025-03-16 at 2.12.03 PM copy.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/STS Group Diary_Page_07.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A1546.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A6886.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A7111.JPG" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A8578.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A8853.JPG" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      <figure class="tile"><img src="assets/304A9047.jpg" alt="Photography by Khaled Hasan Munna" loading="lazy"><figcaption>Khaled Hasan Munna</figcaption></figure>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Khaled Hasan Munna</span><span>Photography · Visual Storytelling</span></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
